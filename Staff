@@ -1,0 +1,22 @@
+public class Staff extends Person implements Printable {
+	
+	public String Staff_id;
+	
+	public Staff(){
+		super();
+		Staff_id="";
+	}	
+    public void setStaff_id(String Staff_id) {
+        this.Staff_id = Staff_id;
+    }
+
+    public String getStaff_id() {
+        return Staff_id;
+    }
+   
+	@Override
+	public String getDisplayText() {
+		// TODO Auto-generated method stub
+		return super.toString() + "\nStaff ID number: " + Staff_id + "\n";
+	}
+}

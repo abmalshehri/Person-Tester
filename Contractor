@@ -1,0 +1,24 @@
+
+public class Contractor extends Person implements Printable{
+	
+	private String PPS_No;
+	
+	public Contractor(){
+		super();
+		PPS_No="";
+	}
+    public void setPPS_No(String PPS_No) {
+        this.PPS_No = PPS_No;
+    }
+
+    public String getPPS_No() {
+        return PPS_No;
+    }
+	public String getDisplayText() {
+		// TODO Auto-generated method stub
+		return super.toString() + "\nPPS number: " + PPS_No + "\n";
+	}
+
+			
+	}
+

@@ -1,0 +1,34 @@
+
+public class Student extends Person implements Printable{
+	
+	private String course,Studentnumber;
+	
+	 public Student() {
+	        super();
+	        course="";
+	        Studentnumber="";
+	 }
+	    public void setcourse(String course) {
+	        this.course = course;
+	    }
+
+	    public String getcourse() {
+	        return course;
+	    }
+	    
+	    public void setStudentnumber(String Studentnumber) {
+	        this.Studentnumber = Studentnumber;
+	    }
+
+	    public String getStudentnumber() {
+	        return Studentnumber;
+	    }
+
+	@Override
+	public String getDisplayText() {
+		// TODO Auto-generated method stub
+		return super.toString() + "\nStudent course: " + course + "\n"
+				+"\nStudent number: " + Studentnumber + "\n";
+	}
+	}
+
