@@ -1,1 +1,1 @@
-# Person-Tester
+Person Tester application to work with student, staff and employee data Console.What is did here is to store data that you enter in the application . There are three kind of info that is different from each other .
