@@ -1,0 +1,39 @@
+public class PersonDB {
+
+    public static Person getDisplayText(String PersonCode) {
+    	
+    	Person p = null;
+    	
+        if (PersonCode.equalsIgnoreCase("s")
+                || PersonCode.equalsIgnoreCase("sf")
+                || PersonCode.equalsIgnoreCase("c")) {
+            Student S = new Student();
+            if (PersonCode.equalsIgnoreCase("s")) {
+                S.setFirstName("AbdulMajeed");
+                S.setLastName("Alshehri");
+                S.setEmail("a.alshehri1@nuigalway.ie");
+                S.setcourse("MBS123");
+                S.setStudentnumber("M10293");
+                p=S;
+            }
+            
+        }  if (PersonCode.equalsIgnoreCase("sf")) {
+        	Staff ST = new Staff();
+        	 ST.setFirstName("Don");
+             ST.setLastName("Murphy");
+             ST.setEmail("Don@nuigalway.ie");
+             ST.setStaff_id("NUI113234");
+             p=ST;
+             }
+        
+        else  if (PersonCode.equalsIgnoreCase("c")) {
+    	    Contractor C= new Contractor();
+    	    C.setFirstName("Anne");
+            C.setLastName("Prince");
+            C.setEmail("anne@hotmail.com");
+            C.setPPS_No("111-11-1111");
+            p=C;
+             } 
+           return p;
+    }
+}
